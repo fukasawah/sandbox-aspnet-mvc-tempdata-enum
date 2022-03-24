@@ -1,0 +1,19 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+<section>
+    <p>State=@Model.State</p>
+    <p>StateInt=@Model.StateInt</p>
+    <p>Message=@Model.Message</p>
+    <p>RequestCookieData=@Model.RequestCookieData</p>
+</section>
+
+<section>
+    <a href="">Reload</a>
+    <a asp-page-handler="OKHandler">OK</a>
+    <a asp-page-handler="NGHandler">NG</a>
+</section>
